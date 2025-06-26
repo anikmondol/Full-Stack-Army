@@ -13,14 +13,6 @@
 
             include "config.php";
 
-
-            // $limit = 3;
-            // $page = $_REQUEST['page'];
-            // $offset = ($page - 1) * $limit;
-
-
-            // $sql = "SELECT * FROM `user` order by user_id desc limt $offset, $limit";
-
             $limit = 3;
 
 
@@ -99,11 +91,8 @@
 
                         for ($i = 1; $i <= $total_pages; $i++) {
 
-                            if ($i == $page) {
-                                $active = "active";
-                            } else {
-                                $active = "";
-                            }
+                            $active = ($i == $page) ? "active text-success" : "";
+
                             echo "<li class='$active'><a href='users.php?page=$i'> $i </a></li>";
                         }
                         if ($page < $total_pages) {
