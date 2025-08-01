@@ -198,5 +198,224 @@
 
 // task-20
 
-echo "এই স্ক্রিপ্ট রান হচ্ছে: " . $_SERVER['PHP_SELF'];
+// echo "এই স্ক্রিপ্ট রান হচ্ছে: " . $_SERVER['PHP_SELF'];
+
+
+// class Car {}
+// class Bike {}
+
+// class VehicleFactory {
+//     public static function create($type) {
+//         if ($type == 'car') return new Car();
+//         if ($type == 'bike') return new Bike();
+//     }
+// }
+
+// $vehicle = VehicleFactory::create('bike');
+// var_dump($vehicle);
+
+// class Engine {
+//     public function start() {
+//         echo "Engine started";
+//     }
+// }
+
+// class Car {
+//     private $engine;
+
+//     public function __construct() {
+//         $this->engine = new Engine();
+//     }
+
+//     public function startCar() {
+//         $this->engine->start();
+//     }
+// }
+
+// $car = new Car();
+// $car->startCar();
+
+
+
+// class User {
+//     public $name;
+// }
+
+// $user = new User();
+// $user->name = "Anik";
+
+// $ser = serialize($user);
+// echo $ser;
+
+// $unser = unserialize($ser);
+// echo $unser->name;
+
+
+
+// class CustomException extends Exception {}
+
+// function checkNumber($num) {
+//     if ($num > 1) {
+//         throw new CustomException("Number is too high!");
+//     }
+//     return true;
+// }
+
+// try {
+//     checkNumber(0);
+// } catch (CustomException $e) {
+//     echo "Error: " . $e->getMessage();
+// }
+
+
+
+
+// class Car{
+
+
+//     public $color, $brand;
+
+
+//     public function display(){
+
+//         return "$this->color, $this->brand";
+
+//     }
+
+
+// }
+
+
+// $c = new Car();
+
+// $c->color = "red";
+// $c->brand = "hp";
+
+// echo $c->display();
+
+// class Student
+// {
+
+
+//     public $name, $age;
+
+
+//     public function __construct($n, $a)
+//     {
+//         $this->name = $n;
+//         $this->age = $a;
+//     }
+
+//     public function getDetails(){
+
+//         return "$this->name, $this->age";
+
+//     }
+// }
+
+
+// $s = new Student("anik", 25);
+
+// echo $s->getDetails();
+
+
+
+
+// class Animal{
+
+
+//     public function sound(){
+//         echo "animal sound";
+//     }
+
+// }
+
+// class Dog extends Animal{
+
+//     public function sound()
+//     {
+//         echo "bark";
+//     }
+
+// }
+
+// $a = new Animal();
+// $a->sound();
+
+// $d = new Dog();
+
+// $d->sound();
+
+
+// class BankAccount
+// {
+
+//     private  $balance = 0;
+
+
+//     public function deposit($amount)
+//     {
+
+//         return $this->balance += $amount;
+//     }
+
+
+//     public function withdraw($amount)
+//     {
+
+//         if ($amount > $this->balance) {
+//             echo "balance Not Available";
+//         }
+
+//         return $this->balance -= $amount;
+//     }
+
+
+
+//     public function getBalance()
+//     {
+//         echo $this->balance;
+//     }
+// }
+
+
+// $a = new BankAccount;
+
+// $a->deposit(150);
+// $a->getBalance() . "\n";
+
+// $a->withdraw(100);
+// $a->getBalance() . "\n";
+
+
+
+
+
+
+// class Counter {
+
+//     public static $count = 0;
+
+
+//     public static function increment(){
+//        echo static::$count++ . "\n";
+//     }
+
+
+// }
+
+
+// $c = new Counter;
+
+// $c::increment();
+// $c::increment();
+// $c::increment();
+
+
+
+interface Logger {
+    public function log($msg);
+}
+
+
 
